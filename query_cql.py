@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS song_by_user (
     itemInSession INT,
     firstName VARCHAR,
     lastName VARCHAR,
-    PRIMARY KEY (userid, sessionId, itemInSession)
+    PRIMARY KEY ((userid, sessionId), itemInSession)
 )
 """
 
